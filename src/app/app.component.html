@@ -1,5 +1,7 @@
-<ul>
-  <li><a routerLink="/bubs">Bubs</a></li>
-  <li><a routerLink="/jimmy">Jimmy</a></li>
-</ul>
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="/bubs">Bubs</button>
+  <button mat-menu-item routerLink="/jimmy">Jimmy</button>
+</mat-menu>
+
 <router-outlet></router-outlet>
