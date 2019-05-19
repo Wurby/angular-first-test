@@ -1,8 +1,8 @@
+import { BestStateComponent } from './best-state/best-state.component';
 import { JimmyComponent } from './jimmy/jimmy.component';
 import { BubsComponent } from './bubs/bubs.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { componentFactoryName } from '@angular/compiler';
 
 const routes: Routes = [
   {
@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'jimmy',
     component: JimmyComponent,
+  },
+  {
+    path: 'best-state',
+    component: BestStateComponent,
   },
 ];
 

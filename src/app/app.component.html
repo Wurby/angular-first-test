@@ -1,7 +1,9 @@
-<button mat-button [matMenuTriggerFor]="menu">Menu</button>
-<mat-menu #menu="matMenu">
-  <button mat-menu-item routerLink="/bubs">Bubs</button>
-  <button mat-menu-item routerLink="/jimmy">Jimmy</button>
-</mat-menu>
-
+<div class="padded">
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/bubs">Bubs</button>
+    <button mat-menu-item routerLink="/jimmy">Jimmy</button>
+    <button mat-menu-item routerLink="/best-state">Best State</button>
+  </mat-menu>
+</div>
 <router-outlet></router-outlet>
